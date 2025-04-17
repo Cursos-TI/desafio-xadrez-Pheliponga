@@ -36,7 +36,8 @@ int main() {
 
     for (int movc = 0; movc < 1; movc++)
     {
-        while (movimentocavalo--){
+        while (movimentocavalo--)
+        {
             printf("Cavalo: Baixo \n");
         }
         printf("Cavalo: Esquerda \n");

@@ -8,35 +8,24 @@ void movtorre(int casastorre){
     }
 }
 
-void movbispo(int casasbispo){
-    if (casasbispo > 0){
-        movbispo(casasbispo -1);
-    }
-}
-
-void movrainha(int casasrainha){
-    if (casasrainha < 8){
-        printf("Rainha: Esquerda \n");
-        movrainha(casasrainha +1);
-    }
-}
 
 int main() { 
-    
-    int cimabispo;
+
+    int movbd = 5;
 
     movtorre(5);
-
-    while (cimabispo)
-    {
-        for(int movb = 0; movb < 5; movb++){
-            printf("direita \n");
-        }
-        printf("Bispo: Cima ");
-        cimabispo++;
-    }
     
-    movrainha(0);
+    printf("\n");
+
+    for (int movbc = 0; movbc < 5; movbc++)
+    {
+        while (movbd)
+        {
+            printf("Bispo: Direita \n");
+            movbd--;
+        }
+        printf("Cima ");
+    }
 
     return 0;
 }
