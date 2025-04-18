@@ -11,20 +11,19 @@ void movtorre(int casastorre){
 
 int main() { 
 
-    int movbd = 5;
 
     movtorre(5);
-    
     printf("\n");
+
+    char c[20] = "Bispo: Cima", d[20] = "direita";
 
     for (int movbc = 0; movbc < 5; movbc++)
     {
-        while (movbd)
+        for (int movbd = 0; movbd < 1; movbd++)
         {
-            printf("Bispo: Direita \n");
-            movbd--;
+        d;    
         }
-        printf("Cima ");
+        printf("%s %s \n", c, d);
     }
 
     return 0;
